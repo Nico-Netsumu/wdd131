@@ -4,8 +4,8 @@ const yearSpan = document.getElementById("currentyear");
 const currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
 
-const lastModified = document.lastModified;
-lastModifiedSpan.textContent = lastModified;
+const lastModified = document.getElementById("lastModified");
+lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
 // Hamburger
 const hamburgerButton = document.getElementById('hamburger');
