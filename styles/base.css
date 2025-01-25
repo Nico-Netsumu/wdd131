@@ -1,12 +1,11 @@
 /* Blank Line */
 /* Global Variables */
 :root {
-    primary-color: #d32f2f; /* Peru's red */
-    secondary-color: #ffffff; /* White */
-    accent-color: #ffcc00; /* Optional accent */
-    text-color: #333333;
-    background-color: #f0f4f8;
-    font-family: 'Roboto', sans-serif;
+    --primary-color: #d32f2f; /* Peru's red */
+    --secondary-color: #ffffff; /* White */
+    --text-color: #333333;
+    --background-color: #f0f4f8;
+    --font-family: 'Roboto', sans-serif;
 }
 
 /* Base styles */
