@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtered Temples</title>
-    <link rel="stylesheet" href="filtered-temples.css">
-</head>
-  <body>
-    <h1>Temple Album</h1>
-
-    <!-- Filter Options -->
-    <div id="filters">
-        <label for="age-filter">Filter by Age:</label>
-        <select id="age-filter">
-            <option value="all">All</option>
-            <option value="old">Before 1950</option>
-            <option value="modern">1950 and later</option>
-        </select>
-
-        <label for="size-filter">Filter by Size:</label>
-        <select id="size-filter">
-            <option value="all">All</option>
-            <option value="small">Small</option>
-            <option value="large">Large</option>
-        </select>
-
-        <button id="apply-filters">Apply Filters</button>
-    </div>
-
-    <!-- Temple Display Area -->
-    <div id="temple-container"></div>
-
-    <script src="filtered-temples.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Album</title>
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/filtered-temples-large.css">
+        <script src="scripts/filtered-temples.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Temple Album</h1>
+            <nav>
+                <button id="hamburger">☰</button>
+                <ul id="menu" class="hidden">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Filtered Temples</h2>
+            <div class="gallery" id="temple-container">
+                <!-- Temples will be dynamically inserted here -->
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> 🔴 Nicolas Bobadilla 🔴 Lima, Peru</p>
+            <p><span id="lastModified"></span></p>
+        </footer>
+    </body>
 </html>
