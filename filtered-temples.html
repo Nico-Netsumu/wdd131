@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples</title>
+    <link rel="stylesheet" href="filtered-temples.css">
+</head>
+  <body>
+    <h1>Temple Album</h1>
+
+    <!-- Filter Options -->
+    <div id="filters">
+        <label for="age-filter">Filter by Age:</label>
+        <select id="age-filter">
+            <option value="all">All</option>
+            <option value="old">Before 1950</option>
+            <option value="modern">1950 and later</option>
+        </select>
+
+        <label for="size-filter">Filter by Size:</label>
+        <select id="size-filter">
+            <option value="all">All</option>
+            <option value="small">Small</option>
+            <option value="large">Large</option>
+        </select>
+
+        <button id="apply-filters">Apply Filters</button>
+    </div>
+
+    <!-- Temple Display Area -->
+    <div id="temple-container"></div>
+
+    <script src="filtered-temples.js"></script>
+  </body>
+</html>
