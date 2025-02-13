@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Submitted</title>
-    <link rel="stylesheet" href="styles/form.css">
-</head>
-<body>
-    <header>
-        <h1>Thank You!</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Review Submitted</title>
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Thank You!</h1>
+        </header>
 
-    <main>
-        <p>Your review has been submitted successfully.</p>
-        <p>Total reviews submitted: <span id="review-count">0</span></p>
-        <a href="form.html">Submit another review</a>
-    </main>
-    <script>
-        // Update review count in localStorage
-        let count = localStorage.getItem('reviewCount') || 0;
-        count++;
-        localStorage.setItem('reviewCount', count);
-        document.getElementById('review-count').textContent = count;
-    </script>
+        <main>
+            <p>Your review has been submitted successfully.</p>
+            <p>Total reviews submitted: <span id="review-count">0</span></p>
+            <a href="form.html">Submit another review</a>
+        </main>
+        <script>
+            // Update review count in localStorage
+            let count = localStorage.getItem('reviewCount') || 0;
+            count++;
+            localStorage.setItem('reviewCount', count);
+            document.getElementById('review-count').textContent = count;
+            
+        </script>
     <footer>
         <p>&copy; <span id="currentyear"></span> 🔴 Nicolas Bobadilla 🔴 Lima, Peru</p>
         <p><span id="lastModified"></span></p>
