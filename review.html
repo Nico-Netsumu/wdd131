@@ -16,12 +16,6 @@
         <p>Total reviews submitted: <span id="review-count">0</span></p>
         <a href="form.html">Submit another review</a>
     </main>
-
-    <footer>
-        <p>&copy; <span id="currentyear"></span> 🔴 Nicolas Bobadilla 🔴 Lima, Peru</p>
-        <p><span id="lastModified"></span></p>
-    </footer>
-
     <script>
         // Update review count in localStorage
         let count = localStorage.getItem('reviewCount') || 0;
@@ -29,5 +23,9 @@
         localStorage.setItem('reviewCount', count);
         document.getElementById('review-count').textContent = count;
     </script>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🔴 Nicolas Bobadilla 🔴 Lima, Peru</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
