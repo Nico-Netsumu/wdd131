@@ -94,9 +94,11 @@ nav a:hover {
 main {
     max-width: 1000px;
     margin: 2em auto;
+    display: flexbox;
+    justify-content: center;
     display: grid;
+    grid-template-columns: 70%;
     gap: 1.5em;
-    grid-template-columns: 1fr 1fr;
     padding: 2 5em;
 }
 
