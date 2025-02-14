@@ -1,0 +1,37 @@
+<!-- Sample Text -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Travel Guide</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Travel Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel">
+            <button id="prev">&#10094;</button>
+            <img id="carousel-image" src="images/placeholder.jpg" alt="Travel Image" loading="lazy">
+            <button id="next">&#10095;</button>
+        </section>
+        <section>
+            <h2>Welcome to Your Next Adventure</h2>
+            <p>Explore the best travel destinations and get useful tips for your journeys.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Interactive Travel Guide</p>
+    </footer>
+</body>
+</html>
