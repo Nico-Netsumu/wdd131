@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tips</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/tips.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Travel Tips</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Submit Your Travel Tips</h2>
+        <form id="tips-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="tip">Your Travel Tip:</label>
+            <textarea id="tip" name="tip" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <section id="submitted-tips">
+            <h3>Community Travel Tips</h3>
+            <ul id="tips-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Interactive Travel Guide</p>
+    </footer>
+</body>
+</html>
