@@ -97,7 +97,7 @@ main {
     display: grid;
     gap: 1.5em;
     grid-template-columns: 1fr 1fr;
-    padding: 0 1em;
+    padding: 2 5em;
 }
 
 .hero img {
