@@ -25,8 +25,40 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7385581.134734653!2d45.60786999812605!3d25.3296998849997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1739582701087!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
+    <!-- Sample Text -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Travel Guide</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Travel Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel">
+            <button id="prev">&#10094;</button>
+            <img id="carousel-image" src="images/placeholder.webp" alt="Travel Image" loading="lazy">
+            <button id="next">&#10095;</button>
+        </section>
+        <section>
+            <h2>Welcome to Your Next Adventure</h2>
+            <p>Explore the best travel destinations and get useful tips for your journeys.</p>
+        </section>
+    </main>
     <footer>
-        <p>&copy; <span id="year"></span> Interactive Travel Guide</p>
+        <p>&copy; <span id="year"></span> Interactive Travel Guide by Nicolas Bobadilla.</p>
     </footer>
 </body>
 </html>
