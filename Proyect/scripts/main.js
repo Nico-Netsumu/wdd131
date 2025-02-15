@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize Carousel (if present on the page)
     const carouselImage = document.getElementById("carousel-image");
     if (carouselImage) {
-        const images = ["images/travel1.jpg", "images/travel2.jpg", "images/travel3.jpg"];
+        const images = ["images/travel1.webp", "images/travel2.jpg", "images/travel3.jpg"];
         let index = 0;
 
         document.getElementById("prev").addEventListener("click", () => {
